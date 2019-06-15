@@ -4,6 +4,7 @@ import twitter4j.*;
 
 import java.io.*;
 import java.net.URL;
+import java.util.HashMap;
 
 public class TweetStreamListener {
 
@@ -17,49 +18,56 @@ public class TweetStreamListener {
             if (status.getUser().getScreenName().equals("PictureVerse")) {
                 LOGGER.info("This status was posted by @PictureVerse.");
             } else {
-                try {
-                    MediaEntity[] media = status.getMediaEntities();
-                    if (media[0] != null) {
-                        URL url = new URL(media[0].getMediaURL());
-                        InputStream is = url.openStream();
-                        OutputStream os = new FileOutputStream("image.jpg");
+                if (status.getText().contains("RT ")) {
+                    try {
+                        twitter.createFriendship(status.getUser().getId());
+                    } catch (TwitterException exception) {
+                        LOGGER.error("Failed to follow user" + exception.getMessage());
+                    }
+                } else {
+                    try {
+                        MediaEntity[] media = status.getMediaEntities();
+                        if (media[0] != null) {
+                            URL url = new URL(media[0].getMediaURL());
+                            InputStream is = url.openStream();
+                            OutputStream os = new FileOutputStream("image.jpg");
 
-                        byte[] b = new byte[2048];
-                        int length;
+                            byte[] b = new byte[2048];
+                            int length;
 
-                        while ((length = is.read(b)) != -1) {
-                            os.write(b, 0, length);
+                            while ((length = is.read(b)) != -1) {
+                                os.write(b, 0, length);
+                            }
+                            is.close();
+                            os.close();
+                            containsImage = true;
+                            LOGGER.info("Drink image was saved.");
                         }
-                        is.close();
-                        os.close();
-                        containsImage = true;
-                        LOGGER.info("Drink image was saved.");
+                    } catch (IOException exception) {
+                        LOGGER.error("The media from an incoming tweet could not be saved.");
                     }
-                } catch (IOException exception) {
-                    LOGGER.error("The media from an incoming tweet could not be saved.");
-                }
+                    try {
+                        String statusText;
+                        if (status.getText().contains("via /r/Earth")) {
+                            String[] detachedStatus = status.getText().split("\\[");
+                            statusText = detachedStatus[0];
+                        } else {
+                            statusText = status.getText();
+                        }
+                        StatusUpdate statusUpdate = new StatusUpdate(statusText);
+                        if (containsImage) {
+                            statusUpdate.setMedia(new File("image.jpg"));
+                        }
+                        twitter.updateStatus(statusUpdate);
+                        LOGGER.info("Status has been successfully updated.");
 
-                try {
-                    String statusText;
-                    if (status.getText().contains("via /r/Earth")) {
-                        String[] detachedStatus = status.getText().split("\\[");
-                        statusText = detachedStatus[0];
-                    } else {
-                        statusText = status.getText();
+                        if (containsImage) {
+                            File tmpImageFile = new File("image.jpg");
+                            tmpImageFile.delete();
+                        }
+                    } catch (TwitterException exception) {
+                        LOGGER.error(exception.getMessage());
                     }
-                    StatusUpdate statusUpdate = new StatusUpdate(statusText);
-                    if (containsImage) {
-                        statusUpdate.setMedia(new File("image.jpg"));
-                    }
-                    twitter.updateStatus(statusUpdate);
-                    LOGGER.info("Status has been successfully updated.");
-
-                    if (containsImage) {
-                        File tmpImageFile = new File("image.jpg");
-                        tmpImageFile.delete();
-                    }
-                } catch (TwitterException exception) {
-                    LOGGER.error(exception.getMessage());
                 }
             }
         }
