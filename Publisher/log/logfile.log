@@ -1,0 +1,79 @@
+2019-06-24 22:42:20,682 DEBUG [main] - serialVersionUID: 6175546394599249696
+2019-06-24 22:42:20,682 DEBUG [main] - debug: true
+2019-06-24 22:42:20,683 DEBUG [main] - user: null
+2019-06-24 22:42:20,683 DEBUG [main] - password: null
+2019-06-24 22:42:20,683 DEBUG [main] - httpConf: MyHttpClientConfiguration{httpProxyHost='null', httpProxyUser='null', httpProxyPassword='null', httpProxyPort=-1, httpConnectionTimeout=20000, httpReadTimeout=120000, prettyDebug=false, gzipEnabled=true}
+2019-06-24 22:42:20,683 DEBUG [main] - httpStreamingReadTimeout: 40000
+2019-06-24 22:42:20,683 DEBUG [main] - httpRetryCount: 0
+2019-06-24 22:42:20,683 DEBUG [main] - httpRetryIntervalSeconds: 5
+2019-06-24 22:42:20,684 DEBUG [main] - oAuthConsumerKey: n7yiFAhBBwint4kTCkaaFVVXL
+2019-06-24 22:42:20,684 DEBUG [main] - oAuthConsumerSecret: **************************************************
+2019-06-24 22:42:20,684 DEBUG [main] - oAuthAccessToken: 1139344781799239681-0IZw6YhYHPCE7BffDXuk9f2BmMrp1o
+2019-06-24 22:42:20,685 DEBUG [main] - oAuthAccessTokenSecret: *********************************************
+2019-06-24 22:42:20,685 DEBUG [main] - oAuth2TokenType: null
+2019-06-24 22:42:20,685 DEBUG [main] - oAuth2AccessToken: null
+2019-06-24 22:42:20,685 DEBUG [main] - oAuth2Scope: null
+2019-06-24 22:42:20,685 DEBUG [main] - oAuthRequestTokenURL: https://api.twitter.com/oauth/request_token
+2019-06-24 22:42:20,685 DEBUG [main] - oAuthAuthorizationURL: https://api.twitter.com/oauth/authorize
+2019-06-24 22:42:20,685 DEBUG [main] - oAuthAccessTokenURL: https://api.twitter.com/oauth/access_token
+2019-06-24 22:42:20,685 DEBUG [main] - oAuthAuthenticationURL: https://api.twitter.com/oauth/authenticate
+2019-06-24 22:42:20,685 DEBUG [main] - oAuth2TokenURL: https://api.twitter.com/oauth2/token
+2019-06-24 22:42:20,685 DEBUG [main] - oAuth2InvalidateTokenURL: https://api.twitter.com/oauth2/invalidate_token
+2019-06-24 22:42:20,686 DEBUG [main] - restBaseURL: https://api.twitter.com/1.1/
+2019-06-24 22:42:20,686 DEBUG [main] - streamBaseURL: https://stream.twitter.com/1.1/
+2019-06-24 22:42:20,686 DEBUG [main] - userStreamBaseURL: https://userstream.twitter.com/1.1/
+2019-06-24 22:42:20,686 DEBUG [main] - siteStreamBaseURL: https://sitestream.twitter.com/1.1/
+2019-06-24 22:42:20,686 DEBUG [main] - uploadBaseURL: https://upload.twitter.com/1.1/
+2019-06-24 22:42:20,686 DEBUG [main] - dispatcherImpl: twitter4j.DispatcherImpl
+2019-06-24 22:42:20,686 DEBUG [main] - asyncNumThreads: 1
+2019-06-24 22:42:20,686 DEBUG [main] - loggerFactory: null
+2019-06-24 22:42:20,686 DEBUG [main] - contributingTo: -1
+2019-06-24 22:42:20,687 DEBUG [main] - includeMyRetweetEnabled: true
+2019-06-24 22:42:20,687 DEBUG [main] - includeEntitiesEnabled: true
+2019-06-24 22:42:20,687 DEBUG [main] - trimUserEnabled: false
+2019-06-24 22:42:20,687 DEBUG [main] - includeExtAltTextEnabled: true
+2019-06-24 22:42:20,687 DEBUG [main] - tweetModeExtended: false
+2019-06-24 22:42:20,687 DEBUG [main] - includeEmailEnabled: false
+2019-06-24 22:42:20,687 DEBUG [main] - jsonStoreEnabled: false
+2019-06-24 22:42:20,687 DEBUG [main] - mbeanEnabled: false
+2019-06-24 22:42:20,687 DEBUG [main] - userStreamRepliesAllEnabled: false
+2019-06-24 22:42:20,688 DEBUG [main] - userStreamWithFollowingsEnabled: true
+2019-06-24 22:42:20,688 DEBUG [main] - stallWarningsEnabled: true
+2019-06-24 22:42:20,688 DEBUG [main] - applicationOnlyAuthEnabled: false
+2019-06-24 22:42:20,688 DEBUG [main] - mediaProvider: TWITTER
+2019-06-24 22:42:20,688 DEBUG [main] - mediaProviderAPIKey: null
+2019-06-24 22:42:20,688 DEBUG [main] - mediaProviderParameters: null
+2019-06-24 22:42:20,688 DEBUG [main] - daemonEnabled: true
+2019-06-24 22:42:20,688 DEBUG [main] - streamThreadName: 
+2019-06-24 22:42:20,689 DEBUG [main] - instances: [ConfigurationBase{debug=true, user='null', password='null', httpConf=MyHttpClientConfiguration{httpProxyHost='null', httpProxyUser='null', httpProxyPassword='null', httpProxyPort=-1, httpConnectionTimeout=20000, httpReadTimeout=120000, prettyDebug=false, gzipEnabled=true}, httpStreamingReadTimeout=40000, httpRetryCount=0, httpRetryIntervalSeconds=5, oAuthConsumerKey='n7yiFAhBBwint4kTCkaaFVVXL', oAuthConsumerSecret='gwNMlrNprNn6UuU5MRXUqjVoIO7b3jrEaFrOHGP9TvVPD9x9Td', oAuthAccessToken='1139344781799239681-0IZw6YhYHPCE7BffDXuk9f2BmMrp1o', oAuthAccessTokenSecret='uAzGmquXs3riDptIvPtReF39iuFkoLmIXm1GNvLThVEdo', oAuth2TokenType='null', oAuth2AccessToken='null', oAuth2Scope='null', oAuthRequestTokenURL='https://api.twitter.com/oauth/request_token', oAuthAuthorizationURL='https://api.twitter.com/oauth/authorize', oAuthAccessTokenURL='https://api.twitter.com/oauth/access_token', oAuthAuthenticationURL='https://api.twitter.com/oauth/authenticate', oAuth2TokenURL='https://api.twitter.com/oauth2/token', oAuth2InvalidateTokenURL='https://api.twitter.com/oauth2/invalidate_token', restBaseURL='https://api.twitter.com/1.1/', streamBaseURL='https://stream.twitter.com/1.1/', userStreamBaseURL='https://userstream.twitter.com/1.1/', siteStreamBaseURL='https://sitestream.twitter.com/1.1/', uploadBaseURL='https://upload.twitter.com/1.1/', dispatcherImpl='twitter4j.DispatcherImpl', asyncNumThreads=1, loggerFactory='null', contributingTo=-1, includeMyRetweetEnabled=true, includeEntitiesEnabled=true, trimUserEnabled=false, includeExtAltTextEnabled=true, tweetModeExtended=false, includeEmailEnabled=false, jsonStoreEnabled=false, mbeanEnabled=false, userStreamRepliesAllEnabled=false, userStreamWithFollowingsEnabled=true, stallWarningsEnabled=true, applicationOnlyAuthEnabled=false, mediaProvider='TWITTER', mediaProviderAPIKey='null', mediaProviderParameters=null, daemonEnabled=true, streamThreadName=''}]
+2019-06-24 22:42:20,723  INFO [Twitter Stream consumer /  [1][initializing]] - Establishing connection.
+2019-06-24 22:42:20,723 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - Twitter Stream consumer /  [1][Establishing connection]
+2019-06-24 22:42:20,978 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - Request: 
+2019-06-24 22:42:20,978 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - POST https://stream.twitter.com/1.1/statuses/filter.json
+2019-06-24 22:42:20,979 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - OAuth base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&count%3D0%26follow%3D1582853809%252C1075486339%26oauth_consumer_key%3Dn7yiFAhBBwint4kTCkaaFVVXL%26oauth_nonce%3D1858492441%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1561434140%26oauth_token%3D1139344781799239681-0IZw6YhYHPCE7BffDXuk9f2BmMrp1o%26oauth_version%3D1.0%26stall_warnings%3Dtrue
+2019-06-24 22:42:21,027 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - OAuth signature: SoiZQBvJf4cTYy/Q5Vta4vdFnYw=
+2019-06-24 22:42:21,028 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - Authorization: *************************************************************************************************************************************************************************************************************************************************************************************
+2019-06-24 22:42:21,028 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - X-Twitter-Client-Version: 4.0.6
+2019-06-24 22:42:21,028 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - X-Twitter-Client-URL: http://twitter4j.org/en/twitter4j-4.0.6.xml
+2019-06-24 22:42:21,028 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - X-Twitter-Client: Twitter4J
+2019-06-24 22:42:21,028 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - User-Agent: twitter4j http://twitter4j.org/ /4.0.6
+2019-06-24 22:42:21,028 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - Connection: close
+2019-06-24 22:42:21,028 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - Accept-Encoding: gzip
+2019-06-24 22:42:21,029 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - Post Params: count=0&follow=1582853809%2C1075486339&stall_warnings=true
+2019-06-24 22:42:44,423 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - Response: 
+2019-06-24 22:42:44,424 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - date: Tue, 25 Jun 2019 03:42:21 GMT
+2019-06-24 22:42:44,424 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - HTTP/1.1 200 OK
+2019-06-24 22:42:44,424 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - set-cookie: guest_id=v1%3A156143414141827677; Max-Age=63072000; Expires=Thu, 24 Jun 2021 03:42:21 GMT; Path=/; Domain=.twitter.com
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - set-cookie: personalization_id="v1_8thmovtOrAUc4LXG+CFh1A=="; Max-Age=63072000; Expires=Thu, 24 Jun 2021 03:42:21 GMT; Path=/; Domain=.twitter.com
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - server: tsa_a
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - x-tsa-request-body-time: 1
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - x-response-time: 24
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - transfer-encoding: chunked
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - x-connection-hash: 3886dbb2f3ffe1de048471fa0bfe2165
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - content-encoding: gzip
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - content-type: application/json
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - connection: close
+2019-06-24 22:42:44,425 DEBUG [Twitter Stream consumer /  [1][Establishing connection]] - strict-transport-security: max-age=631138519
+2019-06-24 22:42:44,425  INFO [Twitter Stream consumer /  [1][Establishing connection]] - Connection established.
+2019-06-24 22:42:44,425  INFO [Twitter Stream consumer /  [1][Establishing connection]] - Receiving status stream.
+2019-06-24 22:42:44,426 DEBUG [Twitter Stream consumer /  [1][Receiving stream]] - Twitter Stream consumer /  [1][Receiving stream]
